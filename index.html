@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="chat-container">
+    <header class="chat-header">
+      <div>
+        <p class="subtitle">Smart assistant with file uploads & session history</p>
+        <h2>🤖 AI Chatbot</h2>
+      </div>
+      <span class="status-pill">Online</span>
+    </header>
+
+    <div class="tab-bar">
+      <button class="tab active" data-tab="chat">Chat</button>
+      <button class="tab" data-tab="history">History</button>
+    </div>
+
+    <section id="chat-panel" class="tab-panel active">
+      <div id="chat-box"></div>
+
+      <div class="upload-panel">
+        <label class="upload-button">
+          <input id="file-upload" type="file" accept=".pdf,image/*" multiple>
+          Upload PDF / Image
+        </label>
+        <div id="file-list" class="file-list"></div>
+      </div>
+
+      <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type a message..." autocomplete="off">
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+
+    <section id="history-panel" class="tab-panel">
+      <div class="history-top">
+        <span>Recent chats</span>
+        <button id="clear-history" class="ghost-btn">Clear</button>
+      </div>
+      <div id="history-list" class="history-list">
+        <p class="empty-state">No history yet. Start a conversation to save your chat.</p>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
