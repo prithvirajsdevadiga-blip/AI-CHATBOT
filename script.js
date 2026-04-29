@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "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
 const chatBox = document.getElementById("chat-box");
 const historyList = document.getElementById("history-list");
 const fileUpload = document.getElementById("file-upload");
